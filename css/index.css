@@ -1,0 +1,130 @@
+
+body {
+    background-image: url(/images/andrew.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 0px;
+    
+  
+    }  
+
+
+.logo{
+    width: 20%;
+    height: 20%;
+    float: left;
+    padding-top: 10px 0px;
+    padding-left: 10px;
+}
+header{
+    background-color:#E5E3E3;
+    min-height: 170px;
+    min-width: 250px;
+
+}
+
+header::after{
+content: ´´;
+display: table;
+clear: both;
+}
+
+
+nav ul{
+    margin: 0%;
+  padding-top: 2%;
+   list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 25px;
+}
+
+nav a{
+    color: #113340;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+nav a:hover{
+    color:#707070 ;
+}
+h1{
+    position: relative;
+    top: 60px;
+    left: 400px;
+    color: #746C6C;
+    font-size: 60px;
+    place-items: center;
+    
+}
+
+.explorebutton{
+        position: relative;
+        top: 60px;
+        left: 620px;
+        background-color: #113340;
+        color: #fff;
+        border-radius: 100px;
+        text-align: center;
+        transition: all 250ms;
+        border: 0;
+        font-size: 16px;
+        display: block;
+        text-transform: uppercase;
+        width: 170px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3)
+        
+    
+        
+        
+      
+}
+
+
+.explorebutton:hover {
+  box-shadow: #113340(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) 
+}
+        
+    
+        
+
+
+
+footer{
+        background-color:#E5E3E3;
+        height: 40px;
+        position: relative, sticky;
+        margin-top: 390px;
+        height: 45px;
+        clear: both;
+        
+       
+       
+        
+}
+
+p{
+    list-style: none;
+        display: inline-block;
+        color: #113340;
+        font-size: 10px;
+        word-spacing: 200px;
+        padding-left: 125px;
+        text-transform: uppercase;
+      
+        
+       
+}
+
+
+
+
+
