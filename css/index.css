@@ -1,68 +1,53 @@
+/*/global styles/*/
 
-body {
+header {
+    display: flex;
+    flex-direction: row;
+    background-color:#E5E3E3;
+    
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+}
+
+ul{
+    list-style: none;
+   
+}
+
+a {
+    text-decoration: none;
+    color: #113340;
+}
+
+header a:hover {
+    color: #707070
+}
+
+body{
     background-image: url(/images/andrew.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 0px;
-    
-  
-    }  
-
-
-.logo{
-    width: 20%;
-    height: 20%;
-    float: left;
-    padding-top: 10px 0px;
-    padding-left: 10px;
-}
-header{
-    background-color:#E5E3E3;
-    min-height: 170px;
-    min-width: 250px;
-
 }
 
-header::after{
-content: ´´;
-display: table;
-clear: both;
-}
-
-
-nav ul{
-    margin: 0%;
-  padding-top: 2%;
-   list-style: none;
-}
-
-nav li{
-    display: inline-block;
-    margin-left: 80px;
-    padding-top: 25px;
-}
-
-nav a{
-    color: #113340;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 34px;
-}
-
-nav a:hover{
-    color:#707070 ;
-}
 h1{
+    text-align: center;
     position: relative;
-    top: 60px;
-    left: 400px;
+    justify-content: center;
     color: #746C6C;
     font-size: 60px;
     place-items: center;
-    
-}
+       
+     }
 
-.explorebutton{
+section a{
+        text-align: center;
         position: relative;
         top: 60px;
         left: 620px;
@@ -75,56 +60,183 @@ h1{
         font-size: 16px;
         display: block;
         text-transform: uppercase;
-        width: 170px;
         padding: 10px;
         margin-bottom: 10px;
         border-radius: 20px;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3)
-        
-    
-        
-        
-      
-}
-
-
-.explorebutton:hover {
-  box-shadow: #113340(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-  transform: scale(1.05) 
-}
-        
-    
-        
-
-
+         } 
+section a:hover {
+        background-color:#434E52;
+        color: white; 
+            }
 
 footer{
         background-color:#E5E3E3;
-        height: 40px;
         position: relative, sticky;
         margin-top: 390px;
         height: 45px;
         clear: both;
-        
-       
-       
-        
-}
-
-p{
-    list-style: none;
-        display: inline-block;
-        color: #113340;
-        font-size: 10px;
-        word-spacing: 200px;
-        padding-left: 125px;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         text-transform: uppercase;
-      
-        
-       
+        font-size: 12px;
+
+    
+    }
+ p{
+            list-style: none;
+            display: inline-block;
+            color: #113340;
+            font-size: 12px;
+            word-spacing: 400px;
+            padding-left: 125px;
+            text-transform: uppercase;
+                     
+                        }
+/*/mobile styles/*/
+@media screen and(max-width: 480px) {
+    .logo {
+        max-width: 80px;
+        line-height: 80px;
+    }
+    
+    header {
+        min-height: 80px;
+        min-width: 100%;
+    }
+    
+    header ul{ 
+        gap: 10px;
+    }
+   
+    
+    body {
+        min-height: 0px;
+       } 
+         
+    section a{
+            width: 170px;
+            
+         } 
+    
+    footer{
+                
+        height: 40px;
+                
+                  }
+    
 }
 
+/*/tablet styles/*/
+@media screen and(min-width: 481px) and (max-width: 768px) {
+    .logo {
+        max-width: 90px;
+    }
+    
+    header {
+        min-height: 90px;
+        min-width: 320px;
+    }
+    
+    header ul{ 
+        gap: 30px;
+    }
+    ul {
+        margin-left: 50px;
+    }
+    
+    body {
+        min-height: 0px;
+       } 
+         
+    section a{
+            width: 170px;
+            
+         } 
+    
+    footer{
+                
+        height: 40px;
+                
+                  }
+    
+}
 
+/*/desktop styles/*/
+@media screen and(min-width: 769px) {
+    
+    .logo {
+        max-width: 90px;
+    }
+    
+    header {
+        min-height: 170px;
+        min-width: 250px;
+    }
+    
+    header ul{ 
+        gap: 30px;
+    }
+    ul {
+        margin-left: 50px;
+    }
+    
+    body {
+        min-height: 0px;
+       } 
+         
+    section a{
+            width: 170px;
+            
+         } 
+    
+    footer{
+                
+        height: 40px;
+                
+                  }
+}
 
+/*/changing styles/*/
 
+.logo {
+    max-width: 90px;
+}
 
+header {
+    min-height: 170px;
+    min-width: 250px;
+}
+
+header ul{ 
+    gap: 30px;
+}
+ul {
+    margin-left: 50px;
+}
+
+body {
+    min-height: 0px;
+   } 
+     
+section a{
+        width: 170px;
+        
+     } 
+
+footer{
+            
+    height: 40px;
+            
+              }
+             
+          
+          
+           
+      
+      
+
+     
+     
