@@ -1,9 +1,13 @@
 /*/global styles/*/
 
+
+
 header {
     display: flex;
     flex-direction: row;
     background-color:#E5E3E3;
+    flex-grow: 1;
+    display: flexbox;
     
 }
 
@@ -14,16 +18,19 @@ header ul {
     text-align: center;
     float: right;
     margin-right: 20px;
+  
 }
 
 ul{
     list-style: none;
-   
+    
 }
 
 a {
     text-decoration: none;
     color: #113340;
+    font-weight: 510;
+  
 }
 
 header a:hover {
@@ -34,6 +41,8 @@ body{
     background-image: url(/images/andrew.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: gravesend-sans, sans-serif;
+
 }
 
 h1{
@@ -41,16 +50,14 @@ h1{
     position: relative;
     justify-content: center;
     color: #746C6C;
-    font-size: 60px;
     place-items: center;
+    font-weight: 100;
        
      }
 
 section a{
         text-align: center;
         position: relative;
-        top: 60px;
-        left: 620px;
         background-color: #113340;
         color: #fff;
         border-radius: 100px;
@@ -73,66 +80,96 @@ section a:hover {
 footer{
         background-color:#E5E3E3;
         position: relative, sticky;
-        margin-top: 390px;
-        height: 45px;
+        margin-top: 523px;
+        padding: 20px;
         clear: both;
-        padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-transform: uppercase;
-        font-size: 12px;
+       
 
     
     }
+
  p{
             list-style: none;
             display: inline-block;
             color: #113340;
-            font-size: 12px;
-            word-spacing: 400px;
-            padding-left: 125px;
             text-transform: uppercase;
+           
                      
                         }
 /*/mobile styles/*/
-@media screen and(max-width: 480px) {
+@media screen and (max-width: 389px) {
     .logo {
-        max-width: 80px;
+        max-width: 200px;
         line-height: 80px;
+        position: relative;
+        top: 40px;
+        left: 15px;
     }
     
     header {
         min-height: 80px;
         min-width: 100%;
+        left: 125px;
+        
+    
     }
     
     header ul{ 
-        gap: 10px;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a{
+        font-size: 14px;
+     
     }
    
     
     body {
         min-height: 0px;
+        margin: 0 auto;
        } 
+    
+    h1{
+        font-size: 30px;
+        align-items: center;
+        top: 125px;
+    }
          
     section a{
             width: 170px;
+            top: 165px;
+            left: 100px;
             
          } 
     
     footer{
-                
-        height: 40px;
+             height: 30px;
+             padding: .2rem;
+             font-size: 10px;
+             min-width: 100%;
+        
                 
                   }
+    p{
+            font-size: 10px;
+            word-spacing: 200px;
+            padding-left: 20px;
+
+    }
     
 }
 
 /*/tablet styles/*/
-@media screen and(min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 390px) and (max-width: 768px) {
     .logo {
-        max-width: 90px;
+        max-width: 120px;
+        line-height: 80px;
     }
     
     header {
@@ -142,6 +179,13 @@ footer{
     
     header ul{ 
         gap: 30px;
+        
+    }
+
+    a{
+    
+        font-size: 25px;
+        
     }
     ul {
         margin-left: 50px;
@@ -149,26 +193,46 @@ footer{
     
     body {
         min-height: 0px;
+        margin: 0 auto;
        } 
+    
+       h1{
+        font-size: 40px;
+        left: 45px;
+    }
          
     section a{
             width: 170px;
+            top: 12px;
+            left: 247px;
             
          } 
     
     footer{
                 
-        height: 40px;
+        height: 35px;
+        padding: .5rem;
+        font-size: 11px;
                 
                   }
+    p{
+        font-size: 11px;
+        word-spacing: 200px;
+        padding-left: 30px;
+        
+            }
     
 }
 
 /*/desktop styles/*/
-@media screen and(min-width: 769px) {
+@media screen and (min-width: 769px) {
     
     .logo {
-        max-width: 90px;
+        max-width: 260px;
+        line-height: 300px;
+        position: relative;
+        left: 40px;
+        top: -25px;
     }
     
     header {
@@ -178,60 +242,51 @@ footer{
     
     header ul{ 
         gap: 30px;
+        
+    }
+
+    a{
+        font-size: 40px;
+        position: relative;
+        top: 40px;
     }
     ul {
-        margin-left: 50px;
+        margin-left: 30px;
     }
     
     body {
         min-height: 0px;
+        margin: 0 auto;
        } 
+    
+    h1{
+        font-size: 60px;
+    }
          
     section a{
             width: 170px;
+            top: 60px;
+            left: 600px;
             
          } 
     
     footer{
                 
         height: 40px;
+        padding: .5rem;
+        font-size: 14px;
                 
                   }
-}
 
-/*/changing styles/*/
-
-.logo {
-    max-width: 90px;
-}
-
-header {
-    min-height: 170px;
-    min-width: 250px;
-}
-
-header ul{ 
-    gap: 30px;
-}
-ul {
-    margin-left: 50px;
-}
-
-body {
-    min-height: 0px;
-   } 
-     
-section a{
-        width: 170px;
+     p{
+        font-size: 14px;
+        word-spacing: 400px;
+        padding-left: 100px;
+       
         
-     } 
+            }
+}
 
-footer{
-            
-    height: 40px;
-            
-              }
-             
           
           
            
