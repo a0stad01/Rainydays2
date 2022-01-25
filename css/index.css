@@ -1,61 +1,71 @@
 /*/global styles/*/
 
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color:#E5E3E3;
+        flex-grow: 1;
+        display: flexbox;    
+    }
 
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin-right: 20px;
+    }
 
-header {
-    display: flex;
-    flex-direction: row;
-    background-color:#E5E3E3;
-    flex-grow: 1;
-    display: flexbox;
-    
-}
+    ul{ 
+        list-style: none;
+    }
 
-header ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    float: right;
-    margin-right: 20px;
-  
-}
+    .searchbar{
+        text-align: center;
+        background-color: #E5E3E3;
+        color: #113340;
+        border-radius: 100px;
+        text-align: center;
+        transition: all 250ms;
+        border: .5;
+        border-color: #113340;
+        font-size: 16px;
+        display: inline;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3)
+    }
 
-ul{
-    list-style: none;
-    
-}
+    a { 
+        text-decoration: none;
+        color: #113340;
+        font-weight: 510;
+    }
 
-a {
-    text-decoration: none;
-    color: #113340;
-    font-weight: 510;
-  
-}
+    header a:hover {    
+        color: #707070
+    }
 
-header a:hover {
-    color: #707070
-}
+    body{
+        font-family: gravesend-sans, sans-serif;
+        background-image: url(/images/andrew.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-body{
-    background-image: url(/images/andrew.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: gravesend-sans, sans-serif;
-
-}
-
-h1{
-    text-align: center;
-    position: relative;
-    justify-content: center;
-    color: #746C6C;
-    place-items: center;
-    font-weight: 100;
+    h1{
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        color: #746C6C;
+        place-items: center;
+        font-weight: 100;
        
-     }
+    }
 
-section a{
+    section a{
         text-align: center;
         position: relative;
         background-color: #113340;
@@ -72,61 +82,77 @@ section a{
         border-radius: 20px;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3)
          } 
-section a:hover {
+    section a:hover {
         background-color:#434E52;
         color: white; 
-            }
+    }
 
-footer{
+    footer{
+        width: 100%;
         background-color:#E5E3E3;
-        position: relative, sticky;
-        margin-top: 523px;
+        position: absolute;
+        bottom: 0;
         padding: 20px;
         clear: both;
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-transform: uppercase;
-       
-
     
     }
 
- p{
-            list-style: none;
-            display: inline-block;
-            color: #113340;
-            text-transform: uppercase;
-           
-                     
-                        }
+    p{
+        list-style: none;
+        display: inline-block;            
+        color: #113340;
+        text-transform: uppercase;     
+    }
+
 /*/mobile styles/*/
-@media screen and (max-width: 389px) {
+@media screen and (max-width: 500px) {
+
+    header {
+        min-height: 80px;
+        display: block;
+        padding: 20px;
+    }
+
+    header a{
+        margin: auto;
+        width: 100%;
+    }
+
+    header a .logo {
+        width: 100%;
+        margin: auto;
+    }
     .logo {
         max-width: 200px;
         line-height: 80px;
-        position: relative;
-        top: 40px;
-        left: 15px;
+        padding: 40px;
     }
-    
-    header {
-        min-height: 80px;
-        min-width: 100%;
-        left: 125px;
-        
-    
+
+    nav {
+        display: block;
     }
-    
+
     header ul{ 
+        margin: auto;
         gap: 30px;
         flex-direction: column;
         align-items: center;
     }
+    
+    .searchbar{
+        width: 80%;
+        margin: 0,auto;
+        margin-top: 10px;
+        display: block;
+        position: relative;
+    }
 
     a{
         font-size: 14px;
-     
     }
    
     
@@ -152,24 +178,22 @@ footer{
              height: 30px;
              padding: .2rem;
              font-size: 10px;
-             min-width: 100%;
-        
-                
-                  }
+             width: 100%;  
+            }
     p{
             font-size: 10px;
             word-spacing: 200px;
             padding-left: 20px;
-
-    }
+        }
     
 }
 
 /*/tablet styles/*/
-@media screen and (min-width: 390px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .logo {
-        max-width: 120px;
+        max-width: 200px;
         line-height: 80px;
+        padding: 20px;
     }
     
     header {
@@ -183,12 +207,16 @@ footer{
     }
 
     a{
-    
-        font-size: 25px;
-        
+        font-size: 25px;  
     }
+
     ul {
         margin-left: 50px;
+    }
+
+    .searchbar{
+        left: 350px;
+        top: 30px;
     }
     
     body {
@@ -198,9 +226,10 @@ footer{
     
        h1{
         font-size: 40px;
-        left: 45px;
+        left: 150px;
     }
-         
+
+    
     section a{
             width: 170px;
             top: 12px;
@@ -228,16 +257,14 @@ footer{
 @media screen and (min-width: 769px) {
     
     .logo {
-        max-width: 260px;
-        line-height: 300px;
+        max-width: 200px;
         position: relative;
-        left: 40px;
-        top: -25px;
     }
     
     header {
-        min-height: 170px;
-        min-width: 250px;
+        flex-direction: column;
+        min-height: 150px;
+        padding: 20px;
     }
     
     header ul{ 
@@ -245,10 +272,14 @@ footer{
         
     }
 
+    .searchbar{
+        display: flex;
+    }
+
     a{
-        font-size: 40px;
+        font-size: 30px;
         position: relative;
-        top: 40px;
+       
     }
     ul {
         margin-left: 30px;
